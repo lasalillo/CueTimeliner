@@ -1,5 +1,8 @@
 # CueTimeliner
+
 Snapshot based multitrack Timeliner
+
+(Multimeliner updated version) 
 
 LaunchPad and LaunchControlXL fully mapped.
 
