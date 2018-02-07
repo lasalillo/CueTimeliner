@@ -36,7 +36,7 @@
    <PIN pinname="Output" visible="1">
    </PIN>
    </NODE>
-   <NODE nodename="Renderer (DX11)" componentmode="InAWindow" id="5" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" border="1" stayontop="1">
+   <NODE nodename="Renderer (DX11)" componentmode="InAWindow" id="5" systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" border="1" stayontop="0">
    <BOUNDS type="Node" left="1725" top="4575" width="0" height="0">
    </BOUNDS>
    <BOUNDS type="Box" left="1725" top="4575" width="2400" height="1800">

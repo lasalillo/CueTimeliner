@@ -126,30 +126,16 @@
    </NODE>
    <LINK srcnodeid="8" srcpinname="Output Enum" dstnodeid="1" dstpinname="Protocol">
    </LINK>
-   <NODE systemname="FromRawControllers (MIDI)" filename="vl\VVVV.MIDI.Novation.vl" nodename="FromRawControllers (MIDI)" componentmode="Hidden" id="9">
-   <BOUNDS type="Node" left="1515" top="3045" width="100" height="100">
-   </BOUNDS>
-   <PIN pinname="Raw" visible="1">
-   </PIN>
-   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Output" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="9" dstpinname="Raw">
-   </LINK>
    <NODE systemname="AvoidNIL (Node)" filename="%VVVV%\lib\nodes\modules\Node\AvoidNIL (Node).v4p" nodename="AvoidNIL (Node)" componentmode="Hidden" id="10">
    <BOUNDS type="Node" left="1515" top="3510" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Input" visible="1">
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
    </PIN>
    <PIN pinname="Output" visible="1">
    </PIN>
    <PIN pinname="Default" visible="1" slicecount="1" values="||">
    </PIN>
    </NODE>
-   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="10" dstpinname="Input">
-   </LINK>
    <LINK srcnodeid="10" srcpinname="Output" dstnodeid="5" dstpinname="Input Node">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12">
@@ -171,5 +157,19 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="3" srcpinname="Output" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="FromRawControllers (MIDI)" filename="..\vl\VVVV.MIDI.Novation.vl" nodename="FromRawControllers (MIDI)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="1515" top="3045" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Raw" visible="1">
+   </PIN>
+   <PIN pinname="Evaluate" visible="1" pintype="Input" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="9" dstpinname="Raw">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Output" dstnodeid="10" dstpinname="Input">
    </LINK>
    </PATCH>
