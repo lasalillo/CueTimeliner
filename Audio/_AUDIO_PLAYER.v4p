@@ -95,7 +95,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="1380" top="300" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -105,7 +105,7 @@
    </PIN>
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
-   <PIN pinname="X Input Value" slicecount="1" values="0">
+   <PIN pinname="X Input Value" slicecount="1" values="1">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="ON">
    </PIN>
@@ -179,9 +179,9 @@
    </PIN>
    <PIN pinname="Maximum Foreground FPS" visible="1">
    </PIN>
-   <PIN pinname="Time Mode" slicecount="1" values="Filtered">
+   <PIN pinname="Time Mode" slicecount="1" values="Raw">
    </PIN>
-   <PIN pinname="Present UpFront" slicecount="1" visible="1" pintype="Input" values="1">
+   <PIN pinname="Present UpFront" slicecount="1" visible="1" pintype="Input" values="0">
    </PIN>
    <PIN pinname="Increase Timing Precision" visible="1" pintype="Input" slicecount="1" values="1">
    </PIN>
@@ -195,7 +195,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="210" top="195" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="60">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="65">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -366,10 +366,28 @@
    </NODE>
    <LINK srcnodeid="33" srcpinname="OnChange" dstnodeid="32" dstpinname="Send">
    </LINK>
-   <NODE systemname="Boost (VVVV)" nodename="Boost (VVVV)" componentmode="Hidden" id="-7">
-   <BOUNDS type="Node" left="195" top="2655" width="100" height="100">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
+   <BOUNDS type="Box" left="2160" top="2400" width="795" height="240">
    </BOUNDS>
-   <PIN pinname="Enabled" slicecount="1" values="1">
+   <BOUNDS type="Node" left="2160" top="2400" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Pointer" dstnodeid="38" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
+   <BOUNDS type="Box" left="1740" top="900" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1740" top="900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
    </PIN>
    </NODE>
    <NODE systemname="AudioPlayer (VAudio)" filename="AudioPlayer (VAudio).v4p" nodename="AudioPlayer (VAudio)" componentmode="Hidden" id="3" debug="0">
@@ -398,30 +416,6 @@
    <LINKPOINT x="1125" y="840">
    </LINKPOINT>
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="38">
-   <BOUNDS type="Box" left="2160" top="2400" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="2160" top="2400" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="2" srcpinname="Pointer" dstnodeid="38" dstpinname="Y Input Value">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="39">
-   <BOUNDS type="Box" left="1740" top="900" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="1740" top="900" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   </NODE>
    <LINK srcnodeid="39" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Volume">
    </LINK>
    </PATCH>

@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
-   <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER\Audio\AudioTexture_Multiple.v4p" scrollx="0" scrolly="-360" systemname="AudioTexture_Multiple" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioTexture_Multiple.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.8.dtd" >
+   <PATCH nodename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioTexture_Multiple.v4p" scrollx="0" scrolly="-360" systemname="AudioTexture_Multiple" filename="D:\_VVVV\_Projects\_MULTIMELINER\PresetEngine\Subs\AudioTexture_Multiple.v4p">
    <BOUNDS type="Window" left="14235" top="7530" width="9000" height="6000">
    </BOUNDS>
    <NODE nodename="IOBox (String)" componentmode="InABox" id="1" systemname="IOBox (String)">
@@ -7,7 +7,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="5460" top="840" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Input String" slicecount="1" visible="1" values="|..\..\..\..\Musica\KEROXEN - KRXN#004 MONOCROMA - Volver a la tierra\6. Maestro presidente.wav|">
+   <PIN pinname="Input String" slicecount="1" visible="1" values="C:\_AUDIO\gugg0_03.08.wav">
    </PIN>
    <PIN pinname="Default" slicecount="1" values="||">
    </PIN>
@@ -116,7 +116,7 @@
    </LINK>
    <PACK Name="vvvv-ZeroMQ_Release_x64" Version="0.5.0">
    </PACK>
-   <PACK Name="addonpack" Version="36.0.0">
+   <PACK Name="addonpack" Version="35.0.0">
    </PACK>
    <NODE systemname="Writer (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Writer (DX11.Texture 2d)" componentmode="Hidden" id="11">
    <BOUNDS type="Node" left="5865" top="4230" width="100" height="100">
@@ -287,10 +287,6 @@
    </PIN>
    <PIN pinname="Gamma" slicecount="1" values="1.65">
    </PIN>
-   <PIN pinname="Use Default Size" slicecount="1" values="1">
-   </PIN>
-   <PIN pinname="Default SizeXY" visible="1">
-   </PIN>
    </NODE>
    <LINK srcnodeid="22" srcpinname="Texture Out" dstnodeid="5" dstpinname="Texture">
    </LINK>
@@ -341,7 +337,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3585" top="4335" width="6000" height="4500">
    </BOUNDS>
-   <BOUNDS type="Window" left="28800" top="180" width="16545" height="3330">
+   <BOUNDS type="Window" left="0" top="12270" width="16545" height="3330">
    </BOUNDS>
    <PIN pinname="Show Alpha" slicecount="1" values="1">
    </PIN>
@@ -387,7 +383,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="2505" top="255" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="32">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="16">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -413,9 +409,9 @@
    <LINK srcnodeid="29" srcpinname="Output" dstnodeid="34" dstpinname="Input 1">
    </LINK>
    <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="37" systemname="IOBox (Value Advanced)">
-   <BOUNDS type="Box" left="270" top="1035" width="885" height="1770">
+   <BOUNDS type="Box" left="480" top="930" width="885" height="1770">
    </BOUNDS>
-   <BOUNDS type="Node" left="270" top="1035" width="0" height="0">
+   <BOUNDS type="Node" left="480" top="930" width="0" height="0">
    </BOUNDS>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -477,7 +473,7 @@
    </BOUNDS>
    <BOUNDS type="Node" left="3570" top="270" width="0" height="0">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="13">
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -507,8 +503,6 @@
    <NODE systemname="WaveForm (Spreads)" filename="%VVVV%\packs\VVVV.Audio\nodes\plugins\VVVV.Audio.Nodes.dll" nodename="WaveForm (Spreads)" componentmode="Hidden" id="43">
    <BOUNDS type="Node" left="2970" top="1950" width="100" height="100">
    </BOUNDS>
-   <PIN pinname="Duration" visible="1">
-   </PIN>
    </NODE>
    <LINK srcnodeid="1" srcpinname="Output String" dstnodeid="43" dstpinname="Filename">
    </LINK>
@@ -570,40 +564,4 @@
    </LINK>
    <LINK srcnodeid="45" srcpinname="Output String" dstnodeid="44" dstpinname="Input 3">
    </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="47">
-   <BOUNDS type="Box" left="375" top="180" width="795" height="240">
-   </BOUNDS>
-   <BOUNDS type="Node" left="375" top="180" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="310.544">
-   </PIN>
-   <PIN pinname="Y Output Value" visible="1">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="47" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Y Input Value">
-   </LINK>
-   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="49">
-   <BOUNDS type="Box" left="900" top="3720" width="795" height="480">
-   </BOUNDS>
-   <BOUNDS type="Node" left="900" top="3720" width="0" height="0">
-   </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="2" visible="1" values="256,1">
-   </PIN>
-   <PIN pinname="Units" slicecount="1" values="||">
-   </PIN>
-   <PIN pinname="Precision" slicecount="1" values="4">
-   </PIN>
-   <PIN pinname="Vector Size" slicecount="1" values="2">
-   </PIN>
-   <PIN pinname="Rows" slicecount="1" values="2">
-   </PIN>
-   </NODE>
-   <LINK srcnodeid="49" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Default SizeXY">
-   </LINK>
-   <PACK Name="dx11" Version="1.0.4">
-   </PACK>
    </PATCH>

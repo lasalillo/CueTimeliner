@@ -1,4 +1,4 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.14.dtd" >
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.18.dtd" >
    <PATCH nodename="D:\_VVVV\_Projects\_CUETIMELINER\Subs\Renderer_CueTimeliner.v4p" systemname="Renderer_CueTimeliner" filename="D:\_VVVV\_Projects\_CUETIMELINER\Subs\Renderer_CueTimeliner.v4p" scrollx="0" scrolly="-360">
    <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="1">
    <BOUNDS type="Node" left="3330" top="5115" width="100" height="100">
@@ -41,7 +41,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="1725" top="4575" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="0" top="0" width="28800" height="6090">
+   <BOUNDS type="Window" left="0" top="-225" width="28800" height="6090">
    </BOUNDS>
    <PIN pinname="View" visible="1" slicecount="1" values="||">
    </PIN>
@@ -531,7 +531,7 @@
    </PIN>
    <PIN pinname="ResolXY" visible="1">
    </PIN>
-   <PIN pinname="TimelineEnable" visible="1">
+   <PIN pinname="TimelineEnable" visible="1" slicecount="1" values="1">
    </PIN>
    <PIN pinname="ControllerEnable" visible="1">
    </PIN>
@@ -550,10 +550,10 @@
    </LINK>
    <LINK srcnodeid="5" srcpinname="Actual BackBuffer SizeXY" dstnodeid="42" dstpinname="ResolXY">
    </LINK>
-   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="42" dstpinname="TimelineEnable">
-   </LINK>
    <LINK srcnodeid="37" srcpinname="Output" dstnodeid="42" dstpinname="ControllerEnable">
    </LINK>
    <LINK srcnodeid="42" srcpinname="DrawDataTimeline" dstnodeid="32" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="36" srcpinname="Output" dstnodeid="42" dstpinname="TimelineEnable">
    </LINK>
    </PATCH>
